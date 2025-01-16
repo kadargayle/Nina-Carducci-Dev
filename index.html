@@ -1,31 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+	<!--=============== BALISES META ===============-->
 	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="Site web de Nina Carducci, photographe professionnel, basé à Bordeaux.">
+	<meta name="author" content="Nina Carducci">
+	<meta name="copyright" content="© Nina Carducci">
+
+	<!-- Instagram -->
+	<meta property="insta:username" content="ninacarducci.photo">
+
+	<!--  Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Nina Carducci - Photographe professionnelle à Bordeaux">
+	<meta name="twitter:description" content="Site web de Nina Carducci, photographe professionnel, basé à Bordeaux.">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/Skies-Land/Projet_9_OpenClassrooms_-_Nina_Carducci/main/assets/images/nina.webp">
+
+	<!-- Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Nina Carducci - Photographe professionnelle à Bordeaux">
+	<meta property="og:description" content="Site web de Nina Carducci, photographe professionnel, basé à Bordeaux.">
+	<meta property="og:url" content="https://skies-land.github.io/Projet_9_OpenClassrooms_-_Nina_Carducci/">
+	<meta property="og:image" content="https://raw.githubusercontent.com/Skies-Land/Projet_9_OpenClassrooms_-_Nina_Carducci/main/assets/images/nina.webp">
+	<meta property="og:locale" content="fr_FR">
+
+	<!--=============== SCHEMA.ORG ===============-->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LocalBusiness",
+			"name": "Nina Carducci",
+			"description": "Photographe professionnel basé à Bordeaux, spécialisé dans les portraits, les mariages et les concerts.",
+			"image": "https://raw.githubusercontent.com/Skies-Land/Projet_9_OpenClassrooms_-_Nina_Carducci/main/assets/images/nina.webp",
+			"url": "https://skies-land.github.io/Projet_9_OpenClassrooms_-_Nina_Carducci/",
+			"telephone": "05 56 67 78 89",
+			"priceRange": "50€ - 400€",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"addressCountry": "FR"
+			},
+			"openingHoursSpecification": {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+				"opens": "10:00",
+				"closes": "19:00"
+			}
+		}
+	</script>
+
+	<!--CSS-->
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" >
+	<link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-<div class="top-header">
-	<h3 class="name">Nina Carducci</h3>
-	<div class="nav">   
+<header class="top-header">
+	<h1 class="name">Nina Carducci</h1>
+	<nav class="nav" aria-label="navigation">   
 		<ul>
-			<li><a href="#about">À propos</a></li>
-			<li><a href="#gallery">Galerie</a></li>
-			<li><a href="#services">Service</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/instagram.png" alt=""></a></li>
+			<li><a href="#about" aria-label="About me">By the way</a></li>
+			<li><a href="#gallery" aria-label="Gallery">Gallery</a></li>
+			<li><a href="#services" aria-label="Service">Service</a></li>
+			<li><a href="#contact" aria-label = "Contact">Contact</a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" aria-label="instagram" target="_blank"><img src="assets/images/instagram.png" alt=""></a></li>
 		</ul>
-	</div>
-</div>
+	</nav>
+</header>
 <div id="header">
 
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -36,13 +80,13 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.jpg" class="d-block w-100" alt="...">
+				<img src="./assets/images/slider/slide-1.webp" class="d-block w-100" alt="..." width="1920" height="888">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" class="d-block w-100" alt="...">
+				<img src="./assets/images/slider/slide-2.webp" class="d-block w-100" alt="..." width="1920" height="888">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block w-100" alt="...">
+				<img src="./assets/images/slider/slide-3.webp" class="d-block w-100" alt="..." width="1920" height="888" >
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -57,71 +101,70 @@
 </div>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.png">
+		<img src="./assets/images/nina.webp" alt = "Profile Image of Nina Carducci">
 	</div>
 	<div id="about-me">
-		<h3 class="about-me__title">A propos de moi</h3>
-		<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
-		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
-			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+		<h2 class="about-me__title">About Me</h2>
+		<h3 class="about-me__introduction">Becoming a photographer was an obvious choice for me. As if I was predestined for it. Capturing a moment, an emotion, a situation, a place, a light and the To make them immortal, that's what makes me vibrate.</h3>
+		<p>We spend our lives looking for happiness, and when we touch it, we have only one desire: to freeze it through photographs to enjoy it with the people who are important to us, or to share it with as many people as possible. This is what I propose to you: to capture these wonderful moments through my eyes, my approach, my technique. To make these moments immortal, so that you can draw love, happiness, tenderness and light from them every time you lay eyes on your photos.</p>
 	</div>
 </div>
 <div id="gallery">
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.jpg"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.jpg"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.jpg"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.jpg"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.jpg"/>
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.jpg"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.jpg"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg"/>
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.jpg"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/concert_1.webp" alt = "Concert Image"/>
+			<img data-gallery-tag="Companies" class="gallery-item" src="./assets/images/gallery/companies/enterprise_1.webp" alt = "Man in suit"/>
+			<img data-gallery-tag="Companies" class="gallery-item" src="./assets/images/gallery/companies/entreprise_2.webp" alt = "Woman in a meeting"/>
+			<img data-gallery-tag="Weddings" class="gallery-item" src="./assets/images/gallery/weddings/marriage_1.webp" alt = "Image of hands"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/portrait_1.webp" alt = "Potrait"/>
+			<img data-gallery-tag="Weddings" class="gallery-item" src="./assets/images/gallery/weddings/marriage_2.webp" alt = "Image of married couple"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/portrait_2.webp" alt = "Potrait of woman and a fence"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/concert_2.webp" alt = "Cool concert photo"/>
+			<img data-gallery-tag="Companies" class="gallery-item" src="./assets/images/gallery/companies/entreprise_3.webp" alt = "Image of a woman smiling"/>
 		</div>
 	</div>
 	<div class="quote">
 		<figure>
 			<blockquote>
-				<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
+				<h1 class="quote__text">A potrait is not a likeness. Once an emotion or fact is translated into a photo, it ceases to be a fact and becomes an opinion. Inaccuracy does not exist in photography. All photos are accurate. None of them are the truth.</h1>
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
 	</div>
 </div>
 <div id="services">
-	<h3 class="title">Mes services</h3>
+	<h2 class="title">My services</h2>
 	<div class="container">
 		<div class="service">
 			<div class="service__description">
-				<h3>Shooting photo</h3>
-				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+				<h3>Photo shoot</h3>
+				<p>To capture your most precious moments and keep an unforgettable memory. I travel to lle-de-France to take your photos</p>
 			</div>
 			<div class="service__price">
-				<h4>350€/demi journée</h4>
-				<span>Matériel, déplacement inclus</span>
+				<h4>$350/day</h4>
+				<span>Equipment, travel included</span>
 			</div>
 
 		</div>
 		<div class="service">
 			<div class="service__description">
-				<h3>Retouches</h3>
-				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+				<h3>Retouching</h3>
+				<p>Do you want to retouch your photos for a professional result? Benefit from an optimal rendering for your publicatoins</p>
 			</div>
 			<div class="service__price">
-				<h4>50€/photo</h4>
-				<span>2 AR par photo</span>
+				<h4>$50/photo</h4>
+				<span>2 AR per photo</span>
 			</div>
 		</div>
 		<div class="service">
 			<div class="service__description">
-				<h3>Album photos</h3>
-				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+				<h3>Photo album</h3>
+				<p>Share photos of moments shared together with your loved ones and customers through a personalized photo album</p>
 			</div>
 			<div class="service__price">
-				<h4>400€ album A4</h4>
-				<span>30 pages recto/verso</span>
+				<h4>$400 A4 album</h4>
+				<span>30 double-sided pages</span>
 			</div>
 		</div>
 	</div>
@@ -129,7 +172,7 @@
 <div class="quote">
 	<figure>
 		<blockquote>
-			<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
+			<h1 class="quote__text">Unconsciously, I believe, I am on the lookout for a look, an expression, features or a nostalgia capable of summarizing or more precisely revealing a life.</h1>
 		</blockquote>
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
@@ -137,20 +180,20 @@
 <div id="contact">
 	<div class="container">
 		<div class="form-container">
-			<h3>Une question ? Une demande de devis ?</h3>
-			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-			<form action="" method="post">
-				<label>Nom</label>
-				<input type="text" name="nom" id="nom">
-				<label>Email</label>
-				<input type="email" name="email" id="email">
-				<label>Message</label>
-				<textarea name="message" id="message" cols="30" rows="10"></textarea>
-				<input type="submit" value="Envoyer"/>
+			<h2>A question ? A quote request ?</h2>
+			<p> Do not hesitate to write me! I will answer you in less than 24 hours</p>
+			<form action="#" method="post">
+				<label for="Name">Name</label> 
+				<input type="text" name="Name" id="Name" required placeholder="For Name">
+				<label for = "Email">Email</label>
+				<input type="email" name="email" id="email" required placeholder = "For email">
+				<label for = "message">Message</label>
+				<textarea name="message" id="message" cols="30" rows="10" required placeholder = "For Messages"></textarea>
+				<input type="submit" value="Send"/>
 			</form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/camera.png">
+			<img src="./assets/images/camera.webp" alt = "Image of Camera">
 		</div>
 	</div>
 </div>
