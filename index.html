@@ -1,42 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!--=============== BALISES META ===============-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Website of Nina Carducci, professional photographer, based in Bordeaux">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-	<meta name="robots" content="index, follow">
-	<meta name="description" content="Site web de Nina Carducci, photographe professionnel, basé à Bordeaux.">
-	<meta name="author" content="Nina Carducci">
-	<meta name="copyright" content="© Nina Carducci">
+	<script src="./assets/bootstrap/bootstrap.bundle.js" async></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="./assets/maugallery.js" async></script>
+	<script src="./assets/scripts.js" async></script>
+	<title>Nina Carducci - Professional photographer in Bordeaux</title>
 
-	<!-- Instagram -->
-	<meta property="insta:username" content="ninacarducci.photo">
+	<!--CSS-->
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" >
+	<link rel="stylesheet" href="./assets/style.css">
 
-	<!--  Twitter -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Nina Carducci - Photographe professionnelle à Bordeaux">
-	<meta name="twitter:description" content="Site web de Nina Carducci, photographe professionnel, basé à Bordeaux.">
-	<meta name="twitter:image" content="https://raw.githubusercontent.com/Skies-Land/Projet_9_OpenClassrooms_-_Nina_Carducci/main/assets/images/nina.webp">
-
-	<!-- Facebook -->
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="Nina Carducci - Photographe professionnelle à Bordeaux">
-	<meta property="og:description" content="Site web de Nina Carducci, photographe professionnel, basé à Bordeaux.">
-	<meta property="og:url" content="https://skies-land.github.io/Projet_9_OpenClassrooms_-_Nina_Carducci/">
-	<meta property="og:image" content="https://raw.githubusercontent.com/Skies-Land/Projet_9_OpenClassrooms_-_Nina_Carducci/main/assets/images/nina.webp">
-	<meta property="og:locale" content="fr_FR">
-
-	<!--=============== SCHEMA.ORG ===============-->
+	<!-- SCHEMA.ORG -->
 	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
 			"@type": "LocalBusiness",
 			"name": "Nina Carducci",
-			"description": "Photographe professionnel basé à Bordeaux, spécialisé dans les portraits, les mariages et les concerts.",
-			"image": "https://raw.githubusercontent.com/Skies-Land/Projet_9_OpenClassrooms_-_Nina_Carducci/main/assets/images/nina.webp",
-			"url": "https://skies-land.github.io/Projet_9_OpenClassrooms_-_Nina_Carducci/",
-			"telephone": "05 56 67 78 89",
-			"priceRange": "50€ - 400€",
+			"description": "Professional photographer based in Bordeaux, specializing in portraits, weddings, and concerts.",
+			"telephone": "33 (0)5 56 67 78 89",
 			"address": {
 				"@type": "PostalAddress",
 				"streetAddress": "68 avenue Alsace-Lorraine",
@@ -52,10 +41,6 @@
 			}
 		}
 	</script>
-
-	<!--CSS-->
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" >
-	<link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
 <header class="top-header">
@@ -80,13 +65,13 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/slide-1.webp" class="d-block w-100" alt="..." width="1920" height="888">
+				<img src="./assets/images/slider/slide-1.webp" class="d-block w-100" alt="..." width="1520" height="666">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/slide-2.webp" class="d-block w-100" alt="..." width="1920" height="888">
+				<img src="./assets/images/slider/slide-2.webp" class="d-block w-100" alt="..." width="1520" height="666">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/images/slider/slide-3.webp" class="d-block w-100" alt="..." width="1920" height="888" >
+				<img src="./assets/images/slider/slide-3.webp" class="d-block w-100" alt="..." width="1520" height="666" >
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -101,7 +86,7 @@
 </div>
 <div id="about">
 	<div class="picture left">
-		<img src="./assets/images/nina.webp" alt = "Profile Image of Nina Carducci">
+		<img src="./assets/images/nina.webp" alt = "Profile Image of Nina Carducci" height="500" width="500">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">About Me</h2>
@@ -113,15 +98,15 @@
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/concert_1.webp" alt = "Concert Image"/>
-			<img data-gallery-tag="Companies" class="gallery-item" src="./assets/images/gallery/companies/enterprise_1.webp" alt = "Man in suit"/>
-			<img data-gallery-tag="Companies" class="gallery-item" src="./assets/images/gallery/companies/entreprise_2.webp" alt = "Woman in a meeting"/>
-			<img data-gallery-tag="Weddings" class="gallery-item" src="./assets/images/gallery/weddings/marriage_1.webp" alt = "Image of hands"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/portrait_1.webp" alt = "Potrait"/>
-			<img data-gallery-tag="Weddings" class="gallery-item" src="./assets/images/gallery/weddings/marriage_2.webp" alt = "Image of married couple"/>
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/portrait_2.webp" alt = "Potrait of woman and a fence"/>
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/concert_2.webp" alt = "Cool concert photo"/>
-			<img data-gallery-tag="Companies" class="gallery-item" src="./assets/images/gallery/companies/entreprise_3.webp" alt = "Image of a woman smiling"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/concert_1.webp" alt = "Concert Image" width="400" height="400" />
+			<img data-gallery-tag="Companies" class="gallery-item" src="./assets/images/gallery/companies/enterprise_1.webp" alt = "Man in suit" width="400" height="400"/>
+			<img data-gallery-tag="Companies" class="gallery-item" src="./assets/images/gallery/companies/entreprise_2.webp" alt = "Woman in a meeting" width="400" height="400"/>
+			<img data-gallery-tag="Weddings" class="gallery-item" src="./assets/images/gallery/weddings/marriage_1.webp" alt = "Image of hands" width="400" height="400"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/portrait_1.webp" alt = "Potrait" width="400" height="400"/>
+			<img data-gallery-tag="Weddings" class="gallery-item" src="./assets/images/gallery/weddings/marriage_2.webp" alt = "Image of married couple" width="400" height="400"/>
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/portrait_2.webp" alt = "Potrait of woman and a fence" width="400" height="400"/>
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/concert_2.webp" alt = "Cool concert photo" width="400" height="400"/>
+			<img data-gallery-tag="Companies" class="gallery-item" src="./assets/images/gallery/companies/entreprise_3.webp" alt = "Image of a woman smiling" width="400" height="400"/>
 		</div>
 	</div>
 	<div class="quote">
